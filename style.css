@@ -1,0 +1,190 @@
+/* Temel Stil Ayarları */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Açık mavi arka plan */
+    color: #222222; /* Daha koyu yazı rengi */
+}
+
+/* Ana içerik düzeni */
+#home {
+    display: flex; /* Flexbox düzeni */
+    flex-direction: row; /* Resim ve yazı yan yana */
+    align-items: flex-start; /* Yazı ve resim üst hizalı */
+    gap: 20px; /* Aradaki boşluk */
+    max-width: 1000px; /* İçeriğin genişliği */
+    margin: 50px auto; /* Ortalamak için */
+}
+
+#home img {
+    border-radius: 50%; /* Yuvarlak şekil */
+    width: 200px; /* Resim genişliği */
+    height: 200px; /* Resim yüksekliği */
+    object-fit: cover; /* Resmin orantılı kırpılması */
+    flex-shrink: 0; /* Resmin boyutu sabit kalacak */
+}
+
+/* Metin düzeni */
+#home div {
+    flex-grow: 1; /* Yazı alanı genişlesin */
+    text-align: justify; /* Metni hizala */
+}
+
+#home h2 {
+    margin-top: 0; /* Başlık üst boşluğu kaldır */
+    font-family: 'Poppins', sans-serif;
+    color: #007ACC; /* Canlı mavi başlık */
+}
+
+/* Header Stili */
+header {
+    background: linear-gradient(90deg, #007ACC, #005A99); /* Canlı mavi tonlar */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin: 0 auto;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif; /* Başlık yazı tipi */
+}
+
+/* Navigasyon Stili */
+nav ul {
+    background-color: #005A99; /* Koyu mavi */
+    list-style: none;
+    padding: 10px 0;
+    text-align: center;
+    margin: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto; /* Ortalamak için */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav ul li a:hover {
+    color: #FF6B6B;
+}
+
+/* Bölüm Başlıkları */
+section {
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 1000px; /* İçeriği sınırlamak için */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+/* Genel Başlık Stili */
+h2, h3 {
+    color: #007BFF; /* Renk (Örnek: Mavi) */
+    font-family: 'Arial', sans-serif; /* Font ailesi */
+    font-weight: bold; /* Kalın yazı tipi */
+}
+
+/* Bölüm Başlıkları */
+h2 {
+    font-size: 2em; /* Başlık boyutu */
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5em; /* Alt başlık boyutu */
+    margin-bottom: 15px; /* Alt başlık altındaki boşluk */
+}
+
+
+/* Projeler ve Yetenekler için Grid Düzeni */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* İki eşit sütun */
+    gap: 20px; /* Sütunlar arası boşluk */
+    max-width: 1000px; /* Genişliği sınırlayalım */
+    margin: auto;
+}
+/* Yetenekler Listesi */
+.abilities ul li {
+    background: #f0f0f0;
+    margin: 10px 0; /* Daha fazla boşluk için margin artırıldı */
+    padding: 15px;  /* Padding artırıldı */
+    border-radius: 5px;
+    font-size: 1.2rem; /* Yazı boyutu büyütüldü */
+}
+
+/* Projeler ve Yetenekler kutuları */
+.projects, .abilities {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px; /* Daha fazla padding ekleyerek içerik genişletildi */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+/* Sosyal Medya İkonları Stili */
+.social-media {
+    display: flex;
+    justify-content: center; /* Ortaya hizala */
+    gap: 30px; /* İkonlar arasındaki boşluk */
+    margin-top: 20px;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: inherit; /* Orijinal ikon renklerini kullan */
+    font-size: 2.5rem; /* İkonları büyüt */
+    transition: transform 0.3s ease;
+}
+
+.social-media a:hover {
+    transform: scale(1.2); /* Hover ile büyütme efekti */
+}
+
+/* Sosyal medya ikonlarının kendi renklerinde olması */
+.social-media .fa-instagram {
+    color: #E4405F; /* Instagram rengi */
+}
+
+.social-media .fa-linkedin {
+    color: #0077B5; /* LinkedIn rengi */
+}
+
+.social-media .fa-github {
+    color: #333; /* GitHub rengi */
+}
+
+.social-media .fa-envelope {
+    color: #D14836; /* E-posta rengi */
+}
+
+
+/* Footer Stili */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(90deg, #007ACC, #005A99);
+    color: white;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
